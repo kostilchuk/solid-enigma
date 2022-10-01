@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="style.css" rel="stylesheet">
+        <ul>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="index.html">Google search</a></li>
+        </ul>
+    </head>
+    <body>
+        <div class="container-advanced">
+            <label for="form-advanced"><h2>Find pages with… </h2>
+            <form action="https://www.google.com/search?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=" id="form-advanced">
+                <div class="input-holder">
+                <span><label for="all_w">all these words: </label></span>              
+                    <input type="text" style="margin-left: 115px;" id="all_w" name="as_q">
+                    
+                </div>
+                <div class="input-holder">
+                    <label for="exact_w">this exact word or phrase:</label>
+                    <input type="text" style="margin-left: 50px;" id="exact_w" name="as_epq">
+                    
+                </div>
+                <div class="input-holder">
+                    <label for="any_w">any of these words:</label>
+                    <input type="text" style="margin-left: 90px;" id="any_w" name="as_oq">
+                    
+                </div>
+                <div class="input-holder">
+                <label for="none_w">none of these words:</label>
+                    <input type="text" style="margin-left: 82px;" id="none_w" name="as_eq">
+
+                    
+                </div>
+            </form>
+
+        </div>
+        <div class="container-small">
+            <input type="submit" id="submit-advanced" value="Advanced Search" form="form-advanced">
+        </div>
+    </body>
+</html>
